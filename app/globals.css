@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 279 85% 6%;
+    --background: 279 85% 3%;
     --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
@@ -75,7 +75,8 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 40px #c084fc, 0 0 80px #c084fc;
+    text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 40px #c084fc,
+      0 0 80px #c084fc;
   }
 
   #title #t {
@@ -95,6 +96,7 @@
   }
 
   #title:hover #t:nth-child(2) {
-    text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 40px #c084fc, 0 0 80px #c084fc;
+    text-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 40px #c084fc,
+      0 0 80px #c084fc;
   }
 }
