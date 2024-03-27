@@ -76,7 +76,9 @@ const Header = () => {
             <UserButton />
           </div>
         ) : (
-          <Button className="hidden lg:flex">Sign in</Button>
+          <Button className="hidden lg:flex">
+            <Link href={"/auth/login"}>Sign In</Link>
+          </Button>
         )}
 
         <Button className="ml-auto lg:hidden" onClick={toggleNavigation}>

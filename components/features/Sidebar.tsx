@@ -24,6 +24,7 @@ const Sidebar = () => {
             const isActive = path === pathname;
             return (
               <li
+                key={link.id}
                 className={`relative flex items-center py-2 px-3 my-1 rounded-md text-neutral-500 cursor-pointer ${
                   isActive && "text-glow text-white"
                 }`}

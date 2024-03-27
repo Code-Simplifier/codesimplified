@@ -18,7 +18,7 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "arcticles",
+    title: "articles",
     url: "#pricing",
   },
   {
@@ -47,36 +47,43 @@ export const navigation = [
 
 export const athenaSideLink = [
   {
+    id: 0,
     label: "Home",
     route: "",
     icon: AiFillHome,
   },
   {
+    id: 1,
     label: "Image Restore",
     route: "/restore",
     icon: FaImage,
   },
   {
+    id: 2,
     label: "Generative Fill",
     route: "/fill",
     icon: FaWandMagicSparkles,
   },
   {
+    id: 3,
     label: "Remove Object",
     route: "/remove",
     icon: FaRemoveFormat,
   },
   {
+    id: 4,
     label: "Recolor object",
     route: "/recolor",
     icon: FaPaintRoller,
   },
   {
+    id: 5,
     label: "Remove Background",
     route: "/background",
     icon: PiSelectionBackgroundBold,
   },
   {
+    id: 6,
     label: "Go Premium",
     route: "/pricing",
     icon: FaCartShopping,

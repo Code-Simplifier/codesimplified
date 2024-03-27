@@ -8,6 +8,7 @@ import { secondary_font } from "@/app/fonts";
 import { Tabs } from "@/components/custom/Tabs";
 import img from "@/assets/img/img.png";
 import Image from "next/image";
+import CustomButton from "@/components/custom/CustomButton";
 
 export default function AthenaIndex() {
   const DummyContent = () => {
@@ -125,16 +126,15 @@ export default function AthenaIndex() {
           ease: "easeInOut",
         }}
         className={cn(
-          "flex items-center mt-5 space-x-4",
+          "flex items-center mt-20 space-x-4",
           secondary_font.className
         )}
       >
-        <Button variant="custom" className="uppercase">
-          Get started
-        </Button>
-        <div>
-          <Button className="uppercase">try for free</Button>
-        </div>
+        {/* <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          Shimmer
+        </button> */}
+        <Button>Go Premium</Button>
+        <CustomButton link={"#"} title={"Get started"} />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}

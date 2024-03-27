@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { SettingsSchema } from "@/schemas";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { settings } from "@/actions/settings";
 import {
@@ -73,7 +73,7 @@ const SettingsPage = () => {
   };
 
   return (
-    <Card className="w-[700px] bg-transparent">
+    <Card className="w-[700px] bg-transparent self-center mt-5">
       <CardContent className="mt-4">
         <Form {...form}>
           <form className="space-y-6" onSubmit={form.handleSubmit(onSubmit)}>
@@ -184,7 +184,7 @@ const SettingsPage = () => {
                   control={form.control}
                   name="isTwoFactorEnabled"
                   render={({ field }) => (
-                    <FormItem className="flex flex-row items-center bg-primary justify-between rounded-lg border border-purple-400 p-3 shadow-sm">
+                    <FormItem className="flex flex-row items-center bg-primary/70 justify-between rounded-lg border border-purple-400 p-3 shadow-sm">
                       <div
                         className={cn(secondary_font.className, "space-y-0.5")}
                       >
@@ -197,6 +197,7 @@ const SettingsPage = () => {
                       </div>
                       <FormControl>
                         <Switch
+                          className="ml-5"
                           disabled={isPending}
                           checked={field.value}
                           onCheckedChange={field.onChange}
