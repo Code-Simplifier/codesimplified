@@ -11,6 +11,7 @@ import Image from "next/image";
 import CustomButton from "@/components/custom/CustomButton";
 
 export default function AthenaIndex() {
+  
   const DummyContent = () => {
     return (
       <Image
@@ -22,6 +23,7 @@ export default function AthenaIndex() {
       />
     );
   };
+
   const tabs = [
     {
       title: "Restore",

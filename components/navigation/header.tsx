@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-purple-400 lg:bg-n-8/90 lg:backdrop-blur-md ${
+      className={`fixed top-0 left-0 w-full z-50  border-b border-secondary lg:bg-n-8/90 lg:backdrop-blur-md ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-md"
       }`}
     >
@@ -43,7 +43,9 @@ const Header = () => {
         <Link href="/" className="block w-[12rem] xl:mr-8">
           <h2 id="title" className="ml-3 text-xl uppercase">
             <span id="t">Code</span>
-            <span id="t">Simplified</span>
+            <span id="t" className="text-primary">
+              Simplified
+            </span>
           </h2>
         </Link>
         <nav
@@ -58,7 +60,7 @@ const Header = () => {
                 href={item.url}
                 onClick={handleClick}
                 className={cn(
-                  `block relative text-2xl uppercase hover:text-glow transition-all duration-300 ${
+                  `block relative text-2xl uppercase hover:text-glow  transition-all duration-300 ${
                     item.onlyMobile ? "lg:hidden" : ""
                   } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:leading-5 lg:hover:text-n-1 xl:px-12`
                 )}

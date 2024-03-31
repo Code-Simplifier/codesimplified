@@ -24,7 +24,7 @@ export const navigation = [
   {
     id: "2",
     title: "courses",
-    url: "#how-to-use",
+    url: "/courses",
   },
   {
     id: "3",
@@ -42,6 +42,55 @@ export const navigation = [
     title: "Sign in",
     url: "#login",
     onlyMobile: true,
+  },
+];
+
+export const pricingList = [
+  {
+    id: 0,
+    tier: "Basic",
+    desc: "To discover our tools and enjoy learning",
+    price: "Free",
+    features: ["Read articles and lastest news about coding"],
+    warnings: [
+      "Access to all FREE code snippets",
+      "Free trial of our AI-tools",
+      "Grade-3 Priority",
+    ],
+    paid: [
+      "Access our monthly workshops",
+      "Get our up-to-date and detailed courses",
+    ],
+  },
+  {
+    id: 1,
+    tier: "Pro",
+    desc: "Best option to improve skills and use AI-tools",
+    price: "$9.99",
+    features: [
+      "Read articles and lastest news about coding",
+      "+20 Free CS Points",
+    ],
+    warnings: [
+      "Access to all PRO code snippets",
+      "Pay-per-use access to our AI-tools",
+      "Grade-2 Priorty",
+    ],
+    paid: ["Access our monthly workshops"],
+  },
+  {
+    id: 2,
+    tier: "Pro Max",
+    desc: "Get high-priorty servers to freely use our tools",
+    price: "$29.99",
+    features: [
+      "Read articles and lastest news about coding",
+      "Access to the entire code snippets database",
+      "Free access to our AI-tools",
+      "Grade-1 Priorty",
+    ],
+    warnings: [""],
+    paid: [""],
   },
 ];
 

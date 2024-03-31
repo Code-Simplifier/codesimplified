@@ -26,7 +26,7 @@ import { HashLoader } from "react-spinners";
 
 export const LoginForm = () => {
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl")
+  const callbackUrl = searchParams.get("callbackUrl");
   const urlError =
     searchParams.get("error") === "OAuthAccountNotLinked"
       ? "Email already in use with different provider!"
@@ -147,7 +147,7 @@ export const LoginForm = () => {
           <FormSuccess message={success} />
           <Button disabled={isPending} type="submit" className="w-full">
             {isPending ? (
-              <HashLoader color="white" size={24} />
+              <HashLoader color="black" size={24} />
             ) : showTwoFactor ? (
               "Confirm"
             ) : (

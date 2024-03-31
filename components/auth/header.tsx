@@ -14,7 +14,7 @@ export const Header = ({ label, header }: HeaderProps) => {
       <h1 className={cn("text-3xl font-semibold", primary_font.className)}>
         {header}
       </h1>
-      <p className={cn(secondary_font.className, "text-slate-400 text-sm")}>{label}</p>
+      <p className={cn(secondary_font.className, "text-muted-foreground text-sm")}>{label}</p>
     </div>
   );
 };

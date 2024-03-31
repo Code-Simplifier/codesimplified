@@ -19,20 +19,10 @@ export const Social = () => {
 
   return (
     <div className="flex items-center w-full gap-x-2">
-      <Button
-        size="lg"
-        className="w-full"
-        variant="custom"
-        onClick={() => onClick("google")}
-      >
+      <Button size="lg" className="w-full" onClick={() => onClick("google")}>
         <FaGoogle className="h-5 w-5" />
       </Button>
-      <Button
-        size="lg"
-        className="w-full"
-        variant="custom"
-        onClick={() => onClick("github")}
-      >
+      <Button size="lg" className="w-full" onClick={() => onClick("github")}>
         <FiGithub className="h-5 w-5" />
       </Button>
     </div>
